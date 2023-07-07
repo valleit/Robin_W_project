@@ -1,0 +1,144 @@
+
+
+//========= CONTAINERS============
+/* Default container by center */
+.container_guide {
+    max-width: $container_width;
+    margin: 0 auto;
+    padding:50px;
+}
+
+//========CONTENT SECTION STYLE==============
+
+.content__section {
+    max-width: 970px;
+    padding: 120px 20px;
+    margin: 0 auto 100px;
+    box-shadow: 0 0 50px #7fbed5;
+}
+
+.content__section_bg {
+    background: #1C1C1E;
+}
+
+.content__section_title {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 730px;
+    margin: 0 auto;
+    font-size: $fz-body1;
+    
+
+    >:not(:last-child) {
+            margin: 0 0 24px 0;
+        }
+
+}
+
+.content__section_color {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    @include media-query ($medium-down){
+        justify-content: center;
+    }
+
+    .color__box {
+        flex: 0 0 182px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        height: 225px;
+        padding: 16px;
+        font-size: $fz-body1;
+        font-weight: $fw-bold;
+
+    }
+
+    .color__box_base {
+        background: $color-base;
+    }
+
+    .color__box_level-one {
+        background: $color-level-one;
+    }
+
+    .color__box_light-grey {
+        background: $color-light-grey;
+    }
+
+    .color__box_dark-grey {
+        background: $color-dark-grey;
+    }
+
+    .color__box_text {
+        background: $color-text;
+        color: $color-base;
+    }
+
+    .color__box_primary {
+        background: $color-primary;
+    }
+
+    .color__box_green-accent {
+        background: $color-green-accent;
+    }
+
+    .color__box_pink-accent {
+        background: $color-pink-accent;
+    }
+
+    .color__box_peach-accent {
+        background: $color-peach-accent;
+        color: $color-base;
+    }
+
+    .color__box_violet-accent {
+        background: $color-violet-accent;
+        color: $color-base;
+    }
+ }
+
+ //==========================================================
+
+.title__box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.title__box_name {
+    flex: 1;
+}
+
+.title__box_label1 {
+    font-size: $fz-label1;
+    font-weight: $fw-bold;
+}
+
+.title__box_body-1 {
+    font-size: $fz-body1;
+    font-weight: $fw-regular;
+}
+
+.title__box_overline {
+    font-size: $fz-overline;
+    font-weight: $fw-bold;
+    text-transform: uppercase;
+}
+
+.title__box_button {
+    font-size: $fz-button;
+    font-weight: $fw-bold;
+    text-transform: uppercase;
+}
+
+ //========================================================
+
+
+
+
+

@@ -1,0 +1,105 @@
+.h1 {
+	font-size: $fz-h1;
+	font-weight: $fw-bold;
+
+	@include media-query($small){
+		font-size: $fz-h1-small;
+	}
+
+	@include media-query($extra-small) {
+		font-size: $fz-h1-extra-small;
+	}
+}
+
+.h2 {
+	font-size: $fz-h2;
+	font-weight: $fw-bold;
+}
+
+.h3 {
+	font-size: $fz-h3;
+	font-weight: $fw-bold;
+}
+.h4 {
+	font-size: $fz-h4;
+	font-weight: $fw-bold;
+}
+.h5 {
+	font-size: $fz-h5;
+	font-weight: $fw-bold;
+}
+.h6 {
+
+}
+
+*,
+body {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+}
+
+body {
+	font-family: $primary-font;
+	font-size:$fz-body2;
+	font-weight: $fw-regular;
+	background: $color-base;
+	color: $color-text;
+}
+
+
+//========= CONTAINERS
+/* Default container by center */
+.container {
+	max-width: $container_width;
+	width: 100%;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.container-full--right {
+	max-width: 100%;
+	width: 100%;
+	padding-left: calc(50% - ($container_width / 2));
+	margin-left: 20px;
+	
+	@media screen and (max-width: 768px) {
+		margin-left: 16px;
+	}
+}
+
+.container-full--left {
+	max-width: 100%;
+	width: 100%;
+	padding-right: calc(50% - ($container_width / 2));
+	margin-right: 20px;
+	
+	@media screen and (max-width: 768px) {
+		margin-right: 16px;
+	}
+}
+
+
+
+//========================================================================
+svg {
+	path {
+		fill: currentColor;
+	}
+}
+
+//Whitespace bug
+img {
+	vertical-align: middle;
+}
+
+//Lazyload quality bug
+img[data-sizes] {
+	display: none;
+}
+
+.no-js {
+	display: none;
+}

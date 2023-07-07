@@ -1,0 +1,83 @@
+//Colors
+$color-base: #000;
+$color-level-one: #181823;
+$color-light-grey: #8491A0;
+$color-dark-grey: #5B6876;
+$color-text: #FFF;
+$color-primary: #5221E6;
+$color-green-accent: #3CC74E;
+$color-pink-accent: #E95D90;
+$color-peach-accent: #FFF3E4;
+$color-violet-accent: #FBE4FF;
+
+//Fonts
+$primary-font: 'Sen', sans-serif;
+
+//Font-size
+$fz-label1: 117px;
+$fz-h1: 78px;
+$fz-h1-small: 56px;
+$fz-h1-extra-small: 32px;
+$fz-h2: 55px;
+$fz-h3: 24px;
+$fz-h4: 18px;
+$fz-h5: 16px;
+$fz-body1:18px;
+$fz-body2:16px;
+$fz-overline:16px;
+$fz-button:18px;
+
+//Font-weight
+$fw-regular: 400;
+$fw-bold: 700;
+
+
+//Sizes
+$container_width: 1440px;
+$container_width_no_px: 1440;
+
+//Additional variables
+$transition-duration: 0.3s;
+
+/*============================================================================
+  Grid Breakpoints and Class Names
+    - Do not change the variable names
+==============================================================================*/
+$grid-extra-small: 520px;
+$grid-medium: 768px;
+$grid-large: 990px;
+$grid-extra-large: 1200px;
+$grid-widescreen: 1440px;
+$grid-extra-widescreen: 1600px;
+
+$extra-small: 'extra-small';
+$small: 'small';
+$medium: 'medium';
+$medium-down: 'medium-down';
+$medium-up: 'medium-up';
+$large: 'large';
+$large-down: 'large-down';
+$large-up: 'large-up';
+$extra-large: 'extra-large';
+$extra-large-down: 'extra-large-down';
+$extra-large-up: 'extra-large-up';
+$widescreen: 'widescreen';
+$extra-widescreen: 'extra-widescreen';
+
+// The `$breakpoints` list is used to build our media queries.
+// You can use these in the media-query mixin.
+$breakpoints: (
+  $extra-small '(max-width: #{$grid-extra-small - 1})',
+  $small '(max-width: #{$grid-medium - 1})',
+  $medium '(min-width: #{$grid-medium}) and (max-width: #{$grid-large - 1})',
+  $medium-down '(max-width: #{$grid-large - 1})',
+  $medium-up '(min-width: #{$grid-medium})',
+  $large '(min-width: #{$grid-large}) and (max-width: #{$grid-extra-large - 1})',
+  $large-down '(max-width: #{$grid-extra-large - 1})',
+  $large-up '(min-width: #{$grid-large})',
+  $extra-large '(min-width: #{$grid-extra-large}) and (max-width: #{$grid-widescreen - 1})',
+  $extra-large-down '(max-width: #{$grid-widescreen - 1})',
+  $extra-large-up '(min-width: #{$grid-extra-large})',
+  $widescreen '(min-width: #{$grid-widescreen})',
+  $extra-widescreen '(min-width: #{$grid-extra-widescreen})'
+);
