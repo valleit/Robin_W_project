@@ -10,11 +10,17 @@ $color-pink-accent: #E95D90;
 $color-peach-accent: #FFF3E4;
 $color-violet-accent: #FBE4FF;
 
+$color-body-style-guide: #FFF;
+$wrapper-section-bg-color: #1C1C1E;
+$tetx-information-value-color: rgba(255, 255, 255, 0.80);
+
 //Fonts
 $primary-font: 'Sen', sans-serif;
 
 //Font-size
 $fz-label1: 117px;
+$fz-label1-small: 80px;
+$fz-label1-extra-small: 44px;
 
 $fz-h1: 78px;
 $fz-h1-small: 56px;
@@ -30,6 +36,8 @@ $fz-h4: 18px;
 $fz-h5: 16px;
 
 $fz-body1: 18px;
+$fz-body1-extra-small: 12px;
+
 $fz-body2: 16px;
 $fz-overline: 16px;
 $fz-button: 18px;
@@ -50,12 +58,16 @@ $transition-duration: 0.3s;
   Grid Breakpoints and Class Names
     - Do not change the variable names
 ==============================================================================*/
+$grid-max-extra-small: 400px;
+
 $grid-extra-small: 520px;
 $grid-medium: 768px;
 $grid-large: 990px;
 $grid-extra-large: 1200px;
 $grid-widescreen: 1440px;
 $grid-extra-widescreen: 1600px;
+
+$max-extra-small: 'max-extra-small';
 
 $extra-small: 'extra-small';
 $small: 'small';
@@ -74,6 +86,8 @@ $extra-widescreen: 'extra-widescreen';
 // The `$breakpoints` list is used to build our media queries.
 // You can use these in the media-query mixin.
 $breakpoints: (
+  $max-extra-small '(max-width: #{$grid-max-extra-small - 1})',
+
   $extra-small '(max-width: #{$grid-extra-small - 1})',
   $small '(max-width: #{$grid-medium - 1})',
   $medium '(min-width: #{$grid-medium}) and (max-width: #{$grid-large - 1})',
