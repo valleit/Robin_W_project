@@ -44,6 +44,10 @@
     display: flex;
     align-items: center;
     padding: 0 24px 0 0;
+
+    @include media-query($small) {
+      padding: 10px 0;
+    }
   }
 
   .footer__link {
