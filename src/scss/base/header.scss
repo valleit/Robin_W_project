@@ -1,0 +1,46 @@
+$header-logo-size: 78.4px;
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  z-index: 10;
+
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 72px;
+    gap: 48px;
+  }
+
+  .header__logo {
+    flex: 0 0 $header-logo-size;
+  }
+
+  .header__menu {
+    @include media-query($small) {
+      display: none;
+    }
+  }
+
+  .header__list {
+    display: flex;
+  }
+
+  .header__item {
+    padding: 32px 24px;
+  }
+
+  .header__item--active:active {
+    background: $color-primary;
+    font-weight: $fw-bold;
+  }
+
+  .header__link {
+    color: inherit;
+    line-height: 150%;
+  }
+}
