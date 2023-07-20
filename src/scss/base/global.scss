@@ -42,36 +42,6 @@ main {
   }
 }
 
-
-
-.logo {
-  display: inline-block;
-
-  .logo__image {
-    min-width: 100%
-  }
-}
-
-.social-network {
-  display: flex;
-  gap: 16px;
-
-  .social-network__link {}
-
-  .social-network__icon {
-    width: 24px;
-    min-width: 100%;
-    height: 24px;
-    min-height: 100%;
-
-  }
-}
-
-
-
-
-
-
 .h1 {
   font-size: $fz-h1;
   font-weight: $fw-bold;
@@ -137,8 +107,6 @@ main {
   }
 }
 
-
-
 //========================================================================
 svg {
   path {
@@ -158,4 +126,36 @@ img[data-sizes] {
 
 .no-js {
   display: none;
+}
+
+
+.logo {
+  display: inline-block;
+
+  .logo__image {
+    min-width: 100%
+  }
+}
+
+//My links
+
+.link {
+  color: $color-text;
+  transition: $transition-duration;
+
+  &:hover {
+    color: $color-link-hover;
+  }
+}
+
+.social-network {
+  display: flex;
+  gap: 16px;
+
+  .social-network__icon {
+    width: 24px;
+    min-width: 100%;
+    height: 24px;
+    min-height: 100%;
+  }
 }

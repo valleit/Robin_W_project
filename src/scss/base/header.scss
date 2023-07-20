@@ -17,7 +17,13 @@ $header-logo-size: 78.4px;
   }
 
   .header__logo {
+    color: $color-text;
     flex: 0 0 $header-logo-size;
+    transition: $transition-duration;
+
+    &:hover {
+      color: $color-link-hover;
+    }
   }
 
   .header__menu {
@@ -28,10 +34,43 @@ $header-logo-size: 78.4px;
 
   .header__list {
     display: flex;
+    flex-wrap: wrap;
+    padding: 32px 24px;
+    column-gap: 48px;
+    row-gap: 10px;
   }
 
   .header__item {
-    padding: 32px 24px;
+    transition: $transition-duration;
+
+    &:hover {
+      color: $color-link-hover;
+    }
+
+    &:last-child {
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: -10%;
+        left: -10%;
+        width: 120%;
+        height: 120%;
+        background: $color-primary;
+        transition: $transition-duration;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 0;
+      }
+
+      &:hover {
+        &:after {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
   }
 
   .header__item--active:active {
@@ -40,6 +79,8 @@ $header-logo-size: 78.4px;
   }
 
   .header__link {
+    position: relative;
+    z-index: 1;
     color: inherit;
     line-height: 150%;
   }
