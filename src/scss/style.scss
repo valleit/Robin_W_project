@@ -6,10 +6,17 @@
 @import "base/variables";
 @import "base/mixines";
 @import "base/helper-classes";
+@import "base/logo.scss";
 @import "base/buttons";
+@import "base/links.scss";
 @import "base/global";
 
+@import "base/hover";
+
 @import "base/header.scss";
+@import "base/about-hero";
+@import "base/work-experiens";
+@import "base/philosophy";
 @import "base/footer.scss";
 
 @import "base/style-guide.scss";

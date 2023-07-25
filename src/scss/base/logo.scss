@@ -1,0 +1,8 @@
+.logo {
+  display: inline-block;
+
+  .logo__image {
+    min-width: 100%;
+    color: $main-logo-color;
+  }
+}

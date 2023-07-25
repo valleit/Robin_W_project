@@ -1,18 +1,29 @@
-.btn {
+.btn-link {
+  display: inline-block;
+  font-size: $fz-button;
+  font-weight: $fw-bold;
+  line-height: 150%;
+  color: $color-level-one;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 0 0 4px 0;
+  border-bottom: 1px solid $color-light-grey;
 
+  .btn-link--color {
+    color: $color-text;
+  }
 }
 
+
 .btn--primary {
-	@extend .btn;
+  //@extend .btn;
 }
 
 .btn--secondary {
-	@extend .btn;
+  // @extend .btn;
 }
 
 /*========
 * Links
 ========*/
-.link {
-
-}
+.link {}

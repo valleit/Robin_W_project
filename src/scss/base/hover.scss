@@ -1,0 +1,24 @@
+@include media-query($large-up) {
+
+  .logo {
+    .logo__image:hover {
+      color: $color-hover;
+      transition: $transition-duration;
+    }
+  }
+
+  .link:hover {
+    color: $color-hover;
+    transition: $transition-duration;
+  }
+
+  .social-network__item {
+    .social-network__icon:hover {
+      width: 35px;
+      height: 35px;
+      //background: #8a7b53ab;
+      //box-shadow: 0 0 15px $color-hover;
+      transition: $transition-duration;
+    }
+  }
+}
