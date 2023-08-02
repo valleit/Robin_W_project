@@ -73,6 +73,8 @@ $grid-extra-widescreen: 1600px;
 
 $max-extra-small: 'max-extra-small';
 
+$extra-small-up: 'extra-small-up';
+
 $extra-small: 'extra-small';
 $small: 'small';
 $medium: 'medium';
@@ -91,6 +93,8 @@ $extra-widescreen: 'extra-widescreen';
 // You can use these in the media-query mixin.
 $breakpoints: (
   $max-extra-small '(max-width: #{$grid-max-extra-small - 1})',
+
+  $extra-small-up '(min-width: #{$grid-extra-small})',
 
   $extra-small '(max-width: #{$grid-extra-small - 1})',
   $small '(max-width: #{$grid-medium - 1})',

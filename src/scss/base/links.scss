@@ -5,4 +5,12 @@
   letter-spacing: 1.5px;
   line-height: 150%;
   z-index: 9;
+  transition: $transition-duration;
+
+}
+
+@include media-query($extra-small) {
+  .link--fz {
+    font-size: $fz-h3;
+  }
 }

@@ -1,13 +1,13 @@
-.philosophy {
+.about-hero-instagram {
   display: flex;
-  background: $color-peach-accent;
+  background: $color-violet-accent;
 
   @include media-query($extra-small) {
     flex-direction: column;
   }
 }
 
-.philosophy__info {
+.about-hero-instagram__info {
   display: flex;
   flex: 1;
   max-width: 720px;
@@ -28,7 +28,7 @@
   }
 }
 
-.philosophy__img-container {
+.about-hero-instagram__img-container {
   position: relative;
   flex: 0 1 50%;
   padding-bottom: 600px;
@@ -39,12 +39,10 @@
   }
 }
 
-.philosophy__img {
+.about-hero-instagram__img {
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
-
-
 }
