@@ -5,5 +5,11 @@
     min-width: 100%;
     color: $main-logo-color;
     transition: $transition-duration;
+
+    &:hover {
+      @include media-query($large-up) {
+        color: $color-hover;
+      }
+    }
   }
 }

@@ -7,25 +7,27 @@
   color: $color-level-one;
   letter-spacing: 1px;
   padding: 0 0 4px 0;
-}
+  transition: $transition-duration;
 
-.btn-link::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  display: inline-block;
-  width: 100%;
-  height: 1px;
-  background: $color-light-grey;
-}
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background: $color-light-grey;
+  }
 
-.btn-link--color {
-  color: $color-text;
+  &:hover {
+    transform: scale(1.05);
+  }
+
 }
 
 .button {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   padding: 22px 29px;
@@ -36,4 +38,10 @@
   line-height: 1.5;
   color: $color-text;
   transition: $transition-duration;
+
+  @include media-query($large-up) {
+    &:hover {
+      background: $color-primary;
+    }
+  }
 }

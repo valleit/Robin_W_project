@@ -1,5 +1,6 @@
 .link {
   position: relative;
+  display: block;
   color: inherit;
   font-size: 14px;
   letter-spacing: 1.5px;
@@ -7,10 +8,16 @@
   z-index: 9;
   transition: $transition-duration;
 
-}
-
-@include media-query($extra-small) {
-  .link--fz {
-    font-size: $fz-h3;
+  &:hover {
+    @include media-query($large-up) {
+      color: $color-hover;
+    }
   }
+
+  .link--large-mobile {
+    @include media-query($extra-small) {
+      font-size: $fz-h3;
+    }
+  }
+
 }

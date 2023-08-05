@@ -9,53 +9,40 @@
     padding: 48px 0;
   }
 
-}
+  .work-experiens__cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 0 0 0;
+    gap: 35px;
 
-.work-experiens__cards {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 40px 0 0 0;
-  gap: 35px;
+    @include media-query($large-down) {
+      gap: 20px;
+    }
 
-  @include media-query($large-down) {
-    gap: 20px;
+    @include media-query($extra-small) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
-  @include media-query($extra-small) {
-    flex-direction: column;
-    align-items: center;
+  .work-experiens__card {
+    flex: 1 1 20%;
   }
-}
 
-.work-experiens__card {
-  flex: 1 1 20%;
-}
+  .work-experiens__card-number {
+    display: inline-block;
+    font-size: $fz-label1;
+    color: $color-light-grey;
+    margin: 0 0 5px 0;
+  }
 
-.work-experiens__card-number {
-  display: inline-block;
-  font-size: $fz-label1;
-  color: $color-light-grey;
-  margin: 0 0 5px 0;
-}
+  .work-experiens__card-heading {
+    margin: 0 0 23px 0;
+  }
 
-.work-experiens__card-heading {
-  margin: 0 0 23px 0;
-}
-
-.work-experiens__card-heading--green-accent {
-  color: $color-green-accent;
-}
-
-.work-experiens__card-heading--blue-accent {
-  color: #609BFF;
-}
-
-.work-experiens__card-heading--pink-accent {
-  color: $color-pink-accent;
-}
-
-.work-experiens__card-subtitle {
-  font-size: $fz-body2;
-  color: $color-light-grey;
-  line-height: 1.5;
+  .work-experiens__card-subtitle {
+    font-size: $fz-body2;
+    color: $color-light-grey;
+    line-height: 1.5;
+  }
 }
