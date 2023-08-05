@@ -1,18 +1,47 @@
-.btn {
+.btn-link {
+  position: relative;
+  display: inline-block;
+  max-width: max-content;
+  font-size: $fz-body2;
+  line-height: 1.5;
+  color: $color-level-one;
+  letter-spacing: 1px;
+  padding: 0 0 4px 0;
+  transition: $transition-duration;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background: $color-light-grey;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
 
 }
 
-.btn--primary {
-	@extend .btn;
-}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 22px 29px;
+  border: 1px solid $color-primary;
+  font-size: $fz-body1;
+  font-weight: $fw-bold;
+  text-transform: uppercase;
+  line-height: 1.5;
+  color: $color-text;
+  transition: $transition-duration;
 
-.btn--secondary {
-	@extend .btn;
-}
-
-/*========
-* Links
-========*/
-.link {
-
+  @include media-query($large-up) {
+    &:hover {
+      background: $color-primary;
+    }
+  }
 }

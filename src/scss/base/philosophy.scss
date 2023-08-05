@@ -1,0 +1,50 @@
+.philosophy {
+  display: flex;
+  background: $color-peach-accent;
+
+  @include media-query($extra-small) {
+    flex-direction: column;
+  }
+
+  .philosophy__info {
+    display: flex;
+    flex: 1;
+    max-width: 720px;
+    min-height: 600px;
+    margin-left: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 120px 72px;
+
+    @include media-query($medium-down) {
+      padding: 80px 40px;
+    }
+
+    @include media-query($extra-small) {
+      padding: 48px 20px;
+      min-height: 450px;
+    }
+  }
+
+  .philosophy__img-container {
+    position: relative;
+    flex: 0 1 50%;
+    padding-bottom: 600px;
+    overflow: hidden;
+
+    @include media-query($extra-small) {
+      padding-bottom: 450px;
+    }
+  }
+
+  .philosophy__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+
+  }
+}

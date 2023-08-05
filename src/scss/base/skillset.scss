@@ -1,0 +1,72 @@
+.skillset {
+  padding: 120px 0;
+
+  @include media-query ($medium-down) {
+    padding: 80px 0;
+  }
+
+  @include media-query($extra-small) {
+    padding: 64px 0;
+  }
+
+  .skillset__container {
+    display: flex;
+    gap: 85px;
+
+    @include media-query ($medium-down) {
+      flex-direction: column;
+      gap: 48px;
+    }
+  }
+
+  .heading-section__heading {
+    color: $color-text
+  }
+
+  .heading-section__subheading {
+    color: $color-text;
+  }
+
+  .skillset__cards-grid {
+    display: flex;
+    flex: 1 0 66%;
+    flex-wrap: wrap;
+    gap: 48px 72px;
+
+    @include media-query($extra-small) {
+      flex-direction: column;
+      gap: 48px;
+    }
+  }
+
+  .skillset__card {
+    flex: 0 1 43%;
+
+    @include media-query ($small) {
+      flex: 0 1 42%;
+    }
+
+    @include media-query($extra-small) {
+      flex: 1;
+    }
+  }
+
+  .skillset__card-icon {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    color: $color-primary;
+    margin: 0 0 20px 0;
+  }
+
+  .skillset__card-heading {
+    line-height: 1.5;
+  }
+
+  .skillset__card-subheading {
+    font-size: $fz-body2;
+    color: $color-light-grey;
+    line-height: 1.5;
+    margin: 12px 0 0 0;
+  }
+}

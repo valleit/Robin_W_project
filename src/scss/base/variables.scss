@@ -5,10 +5,15 @@ $color-light-grey: #8491A0;
 $color-dark-grey: #5B6876;
 $color-text: #FFF;
 $color-primary: #5221E6;
+$color-blue-accent: #609BFF;
 $color-green-accent: #3CC74E;
 $color-pink-accent: #E95D90;
 $color-peach-accent: #FFF3E4;
 $color-violet-accent: #FBE4FF;
+
+$color-hover: #f5da91;
+
+$main-logo-color: #FFF;
 
 $color-body-style-guide: #FFF;
 $wrapper-section-bg-color: #1C1C1E;
@@ -69,6 +74,8 @@ $grid-extra-widescreen: 1600px;
 
 $max-extra-small: 'max-extra-small';
 
+$extra-small-up: 'extra-small-up';
+
 $extra-small: 'extra-small';
 $small: 'small';
 $medium: 'medium';
@@ -87,6 +94,8 @@ $extra-widescreen: 'extra-widescreen';
 // You can use these in the media-query mixin.
 $breakpoints: (
   $max-extra-small '(max-width: #{$grid-max-extra-small - 1})',
+
+  $extra-small-up '(min-width: #{$grid-extra-small})',
 
   $extra-small '(max-width: #{$grid-extra-small - 1})',
   $small '(max-width: #{$grid-medium - 1})',

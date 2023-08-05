@@ -1,6 +1,16 @@
+$footer-logo-size: 131px;
+
 .footer {
   padding: 80px 0;
   background: $color-level-one;
+
+  @include media-query($medium-down) {
+    padding: 80px 0 56px;
+  }
+
+  @include media-query($extra-small) {
+    padding: 48px 0;
+  }
 
   .footer__content {
     display: flex;
@@ -11,8 +21,8 @@
     }
   }
 
-  .footer__icons-block {
-    flex: 0 1 59.4%;
+  .footer__content-left {
+    flex: 0 1 59.5%;
 
     @include media-query($medium-down) {
       flex: 0 0 52.9%;
@@ -20,47 +30,39 @@
   }
 
   .footer__logo {
-    width: 131px;
-    margin: 0 0 32px 0;
+    width: $footer-logo-size;
+    margin: 0 0 40px 0;
   }
 
   .footer__menu {
+    display: flex;
     flex: 1 0 auto;
-    //padding: 0 60px 0 0;
+    gap: 24px;
+    padding: 0 110px 0 0;
 
-    /*@include media-query($medium-down) {
-      padding: 0;
-    }*/
-  }
-
-  .footer__list {
-    display: flex;
-    flex-flow: column wrap;
-    height: 100%;
-  }
-
-  .footer__item {
-    flex: 0 0 25%;
-    display: flex;
-    align-items: center;
-    padding: 0 24px 0 0;
-
-    @include media-query($small) {
-      padding: 10px 0;
+    @include media-query($extra-small) {
+      flex-direction: column;
+      gap: 0;
     }
   }
 
-  .footer__link {
+  .footer__menu-list {
+    display: flex;
+    flex: 0 0 47%;
+    flex-direction: column;
+  }
+
+  .footer__menu-item {
     display: flex;
     align-items: center;
-    color: inherit;
-    height: 27.4px;
-    font-size: 14px;
+    padding: 13.5px 0;
   }
 
   .footer__copyright-info {
-    margin: 46px 0 0 0;
-    color: $color-light-grey;
+    padding: 48px 0 0 0;
     font-size: 14px;
+    color: $color-light-grey;
+    letter-spacing: 1.5px;
+    line-height: 150%;
   }
 }

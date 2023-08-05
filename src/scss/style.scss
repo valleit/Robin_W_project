@@ -5,11 +5,22 @@
 @import "base/typography";
 @import "base/variables";
 @import "base/mixines";
-@import "base/helper-classes";
+@import "base/logo.scss";
 @import "base/buttons";
+@import "base/links.scss";
 @import "base/global";
+@import "base/helper-classes";
 
 @import "base/header.scss";
+@import "base/about-hero";
+@import "base/work-experiens";
+@import "base/philosophy";
+@import "base/skillset";
+@import "base/ticker";
+@import "base/hero-projects";
+@import "base/about-hero-instagram";
+@import "base/hero-dribbble";
+@import "base/reviews";
 @import "base/footer.scss";
 
 @import "base/style-guide.scss";
