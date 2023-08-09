@@ -22,7 +22,7 @@ $header-logo-size: 78.4px;
 
   .header__menu {
     @include media-query($extra-small) {
-      //display: none;
+      display: none;
       position: absolute;
       top: 70%;
       right: 10px;

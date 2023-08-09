@@ -63,8 +63,6 @@ main {
   font-weight: $fw-bold;
 }
 
-.h6 {}
-
 //========================================================================
 .svg {
   path {
@@ -172,6 +170,7 @@ img[data-sizes] {
 }
 
 .heading-section {
+  max-width: 588px;
 
   .heading-section__heading {
 

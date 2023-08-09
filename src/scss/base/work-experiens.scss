@@ -26,7 +26,11 @@
   }
 
   .work-experiens__card {
-    flex: 1 1 20%;
+    flex: 1 0 25%;
+
+    @include media-query ($small) {
+      flex: 1 0 40%;
+    }
   }
 
   .work-experiens__card-number {
@@ -45,4 +49,5 @@
     color: $color-light-grey;
     line-height: 1.5;
   }
+
 }
