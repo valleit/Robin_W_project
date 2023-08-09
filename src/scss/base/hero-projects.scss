@@ -108,8 +108,9 @@
   }
 
   .hero-projects__button {
-    max-width: 250px;
+    max-width: 255px;
     margin: 90px auto 0;
+    padding: 24px 32px;
 
     @include media-query($medium-down) {
       display: none;

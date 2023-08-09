@@ -30,7 +30,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 22px 29px;
+  padding: 12px 16px;
   border: 1px solid $color-primary;
   font-size: $fz-body1;
   font-weight: $fw-bold;
@@ -43,5 +43,9 @@
     &:hover {
       background: $color-primary;
     }
+  }
+
+  &--target {
+    background: $color-primary;
   }
 }
